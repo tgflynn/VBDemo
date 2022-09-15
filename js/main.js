@@ -7,6 +7,7 @@ const { ctx } = VBCanvas.createCanvas({
     viewBox: [0, 0, canvasWidth, canvasHeight],
     // where to mount the <canvas> element
     target: '.canvas-wrapper',
+    autoAspectRatio: false
 });
 
 // animation loop (not VBCanvas specific)
