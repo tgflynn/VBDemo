@@ -39,3 +39,5 @@ canvas-wrapper div the layout is as intended with no scroll bars, so the problem
 appears to be with the way the canvas is being handled rather than with the
 CSS layout code.
 
+Live page at: https://tgflynn.github.io/VBDemo/
+
