@@ -1,65 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VBCanvas Demo</title>
-
-    <style>
-        * {
-            margin: 0 0;
-            padding: 0 0;
-            border: 0 0;
-        }
-
-        body {
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .canvas-wrapper {
-            width: 100%;
-            height: 100%;
-            background-color:blueviolet;
-        }
-
-        .canvas-wrapper .vb-canvas {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-color: aqua;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VBCanvas Layout Demos</title>
 </head>
-
 <body>
-    <div class="canvas-wrapper"></div>
+    <header>
+        <h1>VBCanvas Layout Demos</h1>
+    </header>
 
-    <script src="https://unpkg.com/vb-canvas/dist/vb-canvas.min.js"></script>
-    <script>
-        /* 
-          Define the viewBox width and height, any drawing is done relative to these dimensions
-          and will be automatically scaled to whatever size the <canvas> is rendered.
-        */
-        const canvasWidth = 100;
-        const canvasHeight = 100;
-
-        const { ctx } = VBCanvas.createCanvas({
-            // viewBox (x, y, width, height)
-            viewBox: [0, 0, canvasWidth, canvasHeight],
-            // where to mount the <canvas> element
-            target: '.canvas-wrapper',
-        });
-
-        // animation loop (not VBCanvas specific)
-        (function draw() {
-            // draw a rectangle in the center of the canvas
-            ctx.fillRect(40, 40, 20, 20);
-
-            requestAnimationFrame(draw);
-        })();
-    </script>
+    <main>
+        <ul>
+            <li><a href="html/demo1.html" target="_blank">Demo1 (OK)</a></li>
+            <li><a href="html/demo2.html" target="_blank">Demo1 (Overflows)</a></li>
+        </ul>
+    </main>
 </body>
-
 </html>
